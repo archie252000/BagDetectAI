@@ -1,0 +1,484 @@
+  :root {
+     --primary-blue: #05164D;
+     --primary-yellow: #FFBD31;
+     --primary-gray: #bbbbbb;
+     --secondary-gray: rgb(146, 142, 142);
+     --primary-border: 1px solid var(--primary-gray);
+     --primary-border-radius: 10px;
+     --primary-internal-padding: 15px;
+     --primary-margin: 15px;
+     --font-family: 'Plus Jakarta Sans', sans-serif;
+     --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+ }
+ 
+ * {
+     border: 0px;
+     margin: 0px;
+     padding: 0px;
+     font-family: var(--font-family);
+ }
+ 
+ .container {
+     height: 100vh;
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ .container-col {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .login-form-wrapper {
+     display: flex;
+     flex-grow: 1;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     box-sizing: content-box;
+ }
+ 
+ form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     width: 23vw;
+ }
+ 
+ .image-wrapper {
+     display: flex;
+     flex-grow: 1.2;
+     background: url('PlaneImage.jpg') no-repeat center center;
+     background-size: cover;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+     box-sizing: content-box;
+ }
+ 
+ .input-field {
+     border-radius: var(--primary-border-radius);
+     border: var(--primary-border);
+     padding: var(--primary-internal-padding);
+     margin: var(--primary-margin);
+     width: 100%;
+     box-sizing: border-box;
+ }
+ 
+ #login-submit-button {
+     border-radius: var(--primary-border-radius);
+     background-color: var(--primary-blue);
+     color: white;
+     padding: var(--primary-internal-padding);
+     margin: var(--primary-margin);
+     width: 100%;
+     box-sizing: border-box;
+ }
+ 
+ #google-sign-in {
+     border: var(--primary-border);
+     width: 100%;
+     padding: 10px;
+     margin: var(--primary-margin);
+     border-radius: var(--primary-border-radius);
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     box-sizing: border-box;
+     font-size: medium;
+     color: #3f3f3f;
+ }
+ 
+ #google-logo-wrapper {
+     margin-right: 6px;
+     margin-top: 1px
+ }
+ 
+ .checkbox-label {
+     font-weight: 200;
+     font-size: small;
+     color: var(--primary-gray);
+ }
+ 
+ #forgot-password {
+     font-weight: 200;
+     font-size: small;
+     color: var(--primary-gray);
+     color: var(--primary-yellow);
+ }
+ 
+ #cred-opt-wrapper {
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 15px
+ }
+ 
+ #login-heading-wrapper {
+     width: 100%;
+ }
+ 
+ h1 {
+     margin: var(--primary-margin);
+     margin-left: 0;
+     font-size: xx-large;
+ }
+ 
+ h2 {
+     font-size: large;
+     font-weight: 100;
+ }
+ 
+ p {
+     color: var(--primary-gray);
+     font-size: medium;
+     margin: var(--primary-margin);
+     margin-left: 0;
+ }
+ 
+ .logo {
+     height: 17px;
+     margin: var(--primary-margin);
+     margin-left: 100px;
+ }
+ 
+ #logo-wrapper {
+     width: 100%;
+ }
+ 
+ #remember-me-wrapper {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 120px;
+ }
+ 
+ #divider-wrapper {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .half-divider {
+     height: 1px;
+     width: 35%;
+     background-color: var(--secondary-gray);
+ }
+ 
+ .divider-text {
+     font-size: small;
+     text-align: center;
+     margin: var(--primary-margin)
+ }
+ 
+ #sign-up-text-wrapper {
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     align-items: center;
+ }
+ 
+ #copyright-text-login {
+     width: 100%;
+     margin-top: 100px;
+     font-size: smaller;
+     padding-left: 150px;
+ }
+ 
+ .navbar-wrapper {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+ }
+ 
+ .navbar-profile-photo {
+     width: 35px;
+     height: 35px;
+     border-radius: 100px;
+     background-color: var(--primary-gray);
+     border: 2px solid var(--primary-yellow)
+ }
+ 
+ .navbar-logo {
+     height: 16px;
+ }
+ 
+ .dashboard-content-wrapper {
+     display: flex;
+     flex-direction: row;
+     flex-grow: 1;
+ }
+ 
+ .first-half {
+     display: flex;
+     flex: 1;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ 
+ .second-half {
+     display: flex;
+     flex: 1;
+     background: url('robot.jpg') no-repeat center center;
+     background-size: cover;
+ }
+ 
+ .second-half-result {
+     display: flex;
+     flex: 1;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ #dashboard-form {
+     width: 70%;
+     height: 80%;
+ }
+ 
+ #submit-button {
+     border-radius: var(--primary-border-radius);
+     background-color: var(--primary-yellow);
+     color: white;
+     padding: var(--primary-internal-padding);
+     margin: var(--primary-margin);
+     width: 100%;
+     box-sizing: border-box;
+ }
+ 
+ .upload-section {
+     background: url('UploadImage.png') no-repeat;
+     background-size: contain;
+     height: 40vh;
+     width: 40vw;
+ }
+ 
+ .upload-wrapper {
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     justify-content: space-around;
+     margin-left: var(--primary-margin);
+ }
+ 
+ .list-item {
+     border-radius: var(--primary-border-radius);
+     border: var(--primary-border);
+     padding: calc(1 * var(--primary-internal-padding));
+     margin: var(--primary-margin);
+     width: 80%;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+ }
+ 
+ .list-item>div {
+     font-size: large;
+ }
+ 
+ .category-wrapper {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     flex: 1;
+     justify-content: flex-start;
+ }
+ 
+ .category-icon-wrapper {
+     flex: 1;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+ }
+ 
+ .category-text {
+     flex: 5;
+     margin-left: var(--primary-margin);
+     font-size: large;
+ }
+ 
+ .item-text {
+     font-size: large;
+     flex: 1;
+     text-align: center;
+ }
+ 
+ .qty-text {
+     font-size: larger;
+     flex: 1;
+     text-align: center;
+ }
+ 
+ .results-header-wrapper {
+     width: 100%;
+     padding: calc(2 * var(--primary-internal-padding));
+     margin-left: calc(5 *var(--primary-margin));
+     box-sizing: border-box;
+ }
+ 
+ .results-header-wrapper>h2 {
+     font-weight: bold;
+     font-size: larger;
+ }
+ 
+ .info-card {
+     border: var(--primary-border);
+     border-radius: var(--primary-border-radius);
+     height: 200px;
+     width: 200px;
+     margin: var(--primary-margin);
+     padding: var(--primary-internal-padding);
+ }
+ 
+ .info-card-first-half {
+     flex: 1;
+ }
+ 
+ .info-card-first-second {
+     flex: 1;
+ }
+ 
+ .card-icons-wrapper {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     justify-content: flex-start;
+     margin: var(--primary-margin);
+ }
+ 
+ .card-icon-wrapper {
+     padding: var(--primary-internal-padding);
+ }
+ /* Responsive */
+ 
+ @media screen and (max-width: 992px) {
+      :root {
+         --primary-border-radius: 7px;
+         --primary-internal-padding: 12px;
+         --primary-margin: 5px;
+     }
+     .container {
+         flex-direction: column-reverse;
+         height: 120vh;
+         overflow-y: scroll;
+     }
+     .image-wrapper {
+         display: flex;
+         flex-grow: 1.5;
+         background: url('PlaneImage.jpg') no-repeat center center;
+         background-size: cover;
+         border-top-left-radius: 0px;
+         border-bottom-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+         box-sizing: content-box;
+     }
+     #logo-wrapper {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+     .logo {
+         height: 13px;
+         margin: var(--primary-margin);
+     }
+     form {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         width: 80vw;
+     }
+     #login-heading-wrapper {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+     h1 {
+         margin-left: var(--primary-margin);
+         font-size: xx-large;
+     }
+     p {
+         margin-left: var(--primary-margin);
+         text-align: center;
+     }
+     #copyright-text-login {
+         width: 100%;
+         margin-top: 100px;
+         font-size: smaller;
+         padding-left: 0px;
+     }
+     #sign-up-text-wrapper {
+         margin-top: var(--primary-margin)
+     }
+     .dashboard-content-wrapper {
+         height: 200vh;
+         overflow-y: scroll;
+         display: flex;
+         flex-direction: column;
+         flex-grow: 1;
+     }
+     .first-half {
+         flex: 2;
+     }
+     .second-half {
+         display: flex;
+         flex: 1;
+         background: url('robot.jpg') no-repeat;
+         background-size: cover;
+     }
+     .navbar-profile-photo {
+         width: 28px;
+         height: 28px;
+         border-radius: 100px;
+         background-color: var(--primary-gray);
+         border: 2px solid var(--primary-yellow)
+     }
+     .navbar-logo {
+         height: 14px;
+     }
+     .navbar-heading>h1 {
+         font-size: x-large;
+     }
+     #dashboard-form>p {
+         font-size: small;
+     }
+     .navbar-wrapper {
+         padding-top: var(--primary-internal-padding);
+     }
+     .upload-wrapper {
+         align-items: center;
+     }
+     .upload-section {
+         width: 80vw;
+     }
+     .info-card {
+         height: 150px;
+         width: 150px;
+         margin: calc(2 * var(--primary-margin));
+     }
+     .list-item>div {
+         font-size: small;
+     }
+     .category-text {
+         font-size: small;
+     }
+     .item-text {
+         font-size: small;
+     }
+     .qty-text {
+         font-size: small;
+     }
+ }
